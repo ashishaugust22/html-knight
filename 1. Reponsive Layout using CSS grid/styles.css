@@ -3,6 +3,10 @@
   --main-padding: 4px;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   display: grid;
   height: 100vh;
