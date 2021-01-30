@@ -1,15 +1,48 @@
 :root {
-  --primary-background-color: #2f2a59;
+  --primary-background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: "roboto", sans-serif;
+}
+
+button {
+  background-color: #eef7ff;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  font-weight: 600;
+  border: 1px solid #5cb2ff;
+}
+
+input {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  color: var(--heading-color);
+  background-clip: border-box;
+  background-color: #fff;
+  padding: 7px 0px;
+  margin-bottom: 25px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -30,7 +63,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-background-color);
-  color: #fff;
 }
 
 header nav {
@@ -59,7 +91,7 @@ header > nav > div > ul > li {
 
 header a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-weight: 500;
 }
 
@@ -112,8 +144,11 @@ section#ourstory > .container > div {
 Motivation
 */
 
-section#motivation > .container > .card {
+section#motivation > .container {
   margin: 1rem;
+}
+
+section#motivation > .container > .card {
   background-color: #eef7ff;
   padding: 1rem;
 }
@@ -121,11 +156,14 @@ section#motivation > .container > .card {
 /*
 features
 */
+section#features > .container {
+  padding: 5rem 0rem;
+}
+
 section#features > .container > .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  padding: 5rem 1.5rem;
 }
 
 section#features > .container > .cards > .card {
@@ -136,14 +174,46 @@ section#features > .container > .cards > .card {
 /*
 pricing
 */
+section#pricing > .container {
+  padding: 5rem 0rem;
+}
+
 section#pricing > .container > .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  padding: 5rem 1.5rem;
 }
 
 section#pricing > .container > .cards > .card {
   background-color: #eef7ff;
   padding: 0.5rem;
+}
+
+/*
+contactus
+*/
+section#contactus > .container {
+  padding: 5rem 0rem;
+}
+
+section#contactus .wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+/*
+appfooter
+*/
+
+footer#appfooter {
+  height: 200px;
+  background-color: #eef7ff;
+  display: flex;
+  justify-content: center;
+}
+
+footer#appfooter > .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 2rem 0;
 }
