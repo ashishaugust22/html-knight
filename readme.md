@@ -1,1 +1,1 @@
-Welcome to HTML Knight repository
+Repo to focus on fundamental concepts of HTML CSS
